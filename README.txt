@@ -412,3 +412,16 @@ tecnológico, no colores llamativos ni disruptivos"):
   de marca de terceros, no del acento propio del sitio), ni la banda
   de cookies (ya usa un teal similar de forma independiente, estándar
   de toda la familia).
+
+AJUSTES ADICIONALES (a petición del cliente, aplicado igual en los 3
+repositorios de la familia):
+- H1: tamaño reducido 8px (clamp(52-70px) → clamp(44-62px)).
+- Tarjeta de información de contacto: el h2 ahora muestra siempre el
+  título exacto de la web (el mismo que el <title> y el nombre de la
+  ficha de Google Business): "TecPyme | Mantenimiento Informático
+  Salamanca". Añadido line-height:1.25 a .info h2.
+- Menú (escritorio y móvil): "Reunión" → "Agendar cita".
+- Sección de reserva de cita (#cita): el kicker "Si quieres verlo con
+  calma" → "Asesoramiento gratuito".
+- Redacción siguiendo el criterio de Isra Bravo (directo, sin relleno,
+  orientado a beneficio) en los textos tocados en esta pasada.
