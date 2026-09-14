@@ -348,3 +348,67 @@ choque con el H1):
   degradado de desvanecido) siempre queda contenido dentro del hueco
   entre el texto y la tarjeta de contacto, sin importar el ancho de
   viewport.
+
+────────────────────────────────────────────────────────────
+ADAPTACIÓN A TECPYME | MANTENIMIENTO INFORMÁTICO SALAMANCA
+(repositorio clonado a partir de la plantilla ya personalizada de
+PymeTech/Tetuán; se readapta de cero para esta nueva marca/ciudad)
+────────────────────────────────────────────────────────────
+
+MARCA Y TEXTOS:
+- "PymeTech" → "TecPyme" en cabecera, pie de página, JSON-LD (name) y
+  mensaje prellenado de WhatsApp ("¡Hola TecPyme") en el CTA del hero
+  y en el botón flotante.
+- Title: "TecPyme | Mantenimiento Informático Salamanca" (texto exacto
+  indicado por el cliente para SEO).
+- Meta description y og:description reescritas mencionando Salamanca
+  como ciudad de referencia (antes decían "Madrid y España").
+- og:title actualizado igual que el title.
+- Fila "Zona" de la tarjeta de contacto: "Tetuán, Madrid" → "Salamanca
+  capital y alrededores" (no se ha proporcionado un barrio/zona
+  concreta, así que se usa una zona genérica de la ciudad, sin
+  inventar más detalle).
+- FAQ "¿Trabajáis solo en Madrid?" → "¿Trabajáis solo en Salamanca?",
+  con la respuesta actualizada igual.
+- JSON-LD: description, address.addressLocality y areaServed
+  actualizados de Madrid/Tetuán a Salamanca.
+
+DOMINIO Y ENLACES:
+- canonical, og:url y JSON-LD "url" → https://mantenimientoinformaticopymesalamanca.es/
+  (antes apuntaban al dominio de PymeTech, mantenimientoinformaticopymetetuan.es).
+- sitemap.xml y robots.txt actualizados al nuevo dominio.
+- Enlace de Google Maps actualizado en las 4 ubicaciones del sitio
+  (tarjeta de contacto del hero, sección de confianza, contacto y
+  footer) a https://maps.app.goo.gl/Ya2o8oV8iKzvjRz48, proporcionado
+  por el cliente.
+
+⚠️ PENDIENTE — TELÉFONO Y WHATSAPP: se han mantenido sin cambios los
+mismos números que en PymeTech (WhatsApp +34 649 97 01 28, teléfono
++34 914 46 85 03, este último con prefijo de Madrid) porque el cliente
+no ha proporcionado números propios para Salamanca. Revisar antes de
+publicar: si TecPyme atiende con estos mismos números (centralita
+compartida), no hay que tocar nada; si no, hay que sustituirlos por
+los números reales de Salamanca en el CTA de WhatsApp, el botón de
+teléfono, el enlace tel:, el botón flotante y el JSON-LD.
+
+COLOR (a petición del cliente: "modifica el color, pero que sea
+tecnológico, no colores llamativos ni disruptivos"):
+- Sustituido el acento azul/cian de PymeTech por una paleta
+  azul-verdoso (teal) igual de sobria, para diferenciar visualmente
+  esta marca de su plantilla de origen sin perder el carácter
+  tecnológico: --blue:#0b5bd3→#0e7d6f, --indigo:#5f6fff→#2f6e86,
+  --cyan:#32c7d9→#35c6ad. Se ha mantenido igual el fondo oscuro de
+  base (--bg/--bg2, azul marino) y los grises neutros; solo cambia el
+  tono de acento, no la profundidad/saturación general, para no
+  volverlo llamativo.
+- Todos los tonos derivados de esos tres colores (fondos de iconos
+  claros, textos en azul claro sobre fondo oscuro, badges, bordes de
+  hover, sombras de botones) se han recalculado a la misma paleta
+  teal, manteniendo el mismo nivel de luminosidad/contraste que tenían
+  antes (mismo criterio de accesibilidad, solo cambia el matiz).
+- El isotipo (assets/isotipo.svg) también se ha recoloreado al mismo
+  teal, para que el logo sea coherente con el resto del sitio.
+- No se ha tocado el verde de WhatsApp ni el rojo de YouTube (colores
+  de marca de terceros, no del acento propio del sitio), ni la banda
+  de cookies (ya usa un teal similar de forma independiente, estándar
+  de toda la familia).
